@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "SFML/Graphics.hpp"
 using namespace std;
 
 /*TODO
@@ -191,6 +192,19 @@ void MainMenu() {
 }
 
 int main() {
+
+	// basic window setup using sfml
+	/*sf::RenderWindow window(sf::VideoMode(800, 800), "test");
+	sf::Event e;
+
+	while (window.isOpen()) {
+		while (window.pollEvent(e)){
+			if (e.type == sf::Event::Closed) {
+				window.close();
+			}
+		}
+	}*/
+
 	int choice = -1;
 	while (choice != 0) {
 		MainMenu();
